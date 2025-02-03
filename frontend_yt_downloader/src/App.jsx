@@ -14,7 +14,7 @@ function App() {
     setDownloadLink(null);  // ✅ Reset download link before fetching
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/download", {
+      const response = await fetch("https://youtube-video-downloader-w9mj.onrender.com/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url, audio_only: audioOnly }),
@@ -27,7 +27,7 @@ function App() {
       const data = await response.json();
 
       if (data.success) {
-        setDownloadLink(`http://127.0.0.1:5000/get-file/${data.file}`);
+        setDownloadLink(`https://youtube-video-downloader-w9mj.onrender.com/get-file/${data.file}`);
       } else {
         setError("Download failed. Try again.");
       }
