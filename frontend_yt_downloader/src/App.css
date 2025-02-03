@@ -1,0 +1,26 @@
+.container {
+  
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.error {
+  color: red;
+}
