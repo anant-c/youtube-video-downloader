@@ -35,7 +35,7 @@ def download_video(url, save_path="downloads/", audio_only=False):
             'outtmpl': os.path.join(save_path, '%(title)s.%(ext)s'),
             'format': format_choice,
             'merge_output_format': 'mp4' if not audio_only else 'mp3',
-            'socket_timeout': 60
+            'socket_timeout': 300
         }
 
         # Download video or audio

@@ -1,26 +1,53 @@
 .container {
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    gap: 10px; 
 }
 
-input {
-  padding: 10px;
-  width: 60%;
-  margin: 10px;
+.heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    display: block;
+    width: 500px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
 }
 
 button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: blue;
-  color: white;
-  border: none;
-  cursor: pointer;
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 button:disabled {
-  background-color: gray;
+    background-color: #aaa;
 }
 
 .error {
-  color: red;
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+    text-decoration: none;
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./app.css";
 
 function App() {
   const [url, setUrl] = useState("");
@@ -42,8 +42,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1>YouTube Video Downloader</h1>
-      <input
+      <h1 className="heading">YouTube Video Downloader</h1>
+      <input 
+        className="inputBox"
         type="text"
         placeholder="Enter YouTube URL"
         value={url}
